@@ -24,20 +24,20 @@
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-6 col-xl-6 col-xxl-6">
                         <div class="card p-5">
-                            <form action="" method="post">
+                            <form action="<?php echo base_url() ?>schedule" method="get">
                                 <div class="form-row text-center">
                                     <div class="form-group col-12">
                                         <label class="text-white-50" for="">Select your group : </label>
-                                        <select class="form-control form-control-lg text-center" name="" id="">
-                                            <option value="A">A</option>
-                                            <option value="B">B</option>
-                                            <option value="C">C</option>
-                                            <option value="D">D</option>
-                                            <option value="E">E</option>
-                                            <option value="F">F</option>
-                                            <option value="I">I</option>
-                                            <option value="J">J</option>
-                                            <option value="K">K</option>
+                                        <select class="form-control form-control-lg text-center" name="group" id="group">
+                                            <option value="1">A</option>
+                                            <option value="2">B</option>
+                                            <option value="3">C</option>
+                                            <option value="4">D</option>
+                                            <option value="5">E</option>
+                                            <option value="6">F</option>
+                                            <option value="7">I</option>
+                                            <option value="8">J</option>
+                                            <option value="9">K</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-12 mt-4">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-6 col-xxl-6">
                         <div class="card mt-4 mt-lg-0 p-5">
-                            <form action="" method="post">
+                            <form action="<?php echo base_url() ?>/schedule" method="post">
                                 <div class="form-row text-center">
                                     <div class="form-group col-12">
                                         <label class="text-white-50" for="">Select your district : </label>
