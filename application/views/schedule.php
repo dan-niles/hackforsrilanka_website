@@ -15,7 +15,7 @@
         <!-- Navigation-->
         <?php $this->load->view('inc/navbar'); ?>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-dark pt-0 pb-2">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="<?php echo base_url() ?>assets/img/lightbulb.jpeg" alt="..." /></div>
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-3" src="<?php echo base_url() ?>assets/img/lightbulb.jpeg" alt="..." /></div>
                 </div>
             </div>
         </header>
@@ -44,14 +44,14 @@
                                     <div class="form-group col-12">
                                         <h3 class="fw-bolder">Search by Group</h3>
                                         <label class="text-white-50" for="">Select Group: </label>
-                                        <select class="form-control form-control-lg text-center" name="" id="">
+                                        <select class="form-control form-control-lg text-center" name="group" id="group">
                                             <?php foreach ($groups as $group) { ?>
                                                 <option value="<?php echo $group ?>"><?php echo $group ?></option>
                                             <?php } ?>
                                         </select>
                                     </div>
                                     <div class="form-group col-12 mt-4 text-center">
-                                        <button class="btn btn-warning px-4" href="#features">Search</button>
+                                        <button type="submit" class="btn btn-warning px-4">Search</button>
                                     </div>
                                 </div>
                             </form>
