@@ -151,24 +151,33 @@ renderCalendar(month, year);
 $(function () {
 	function showEvent(eventDate) {
 		let storedEvents = groups_data;
+		console.log(eventDate);
 		if (storedEvents == null) {
 			$(".events-today").html(
 				'<h5 class="text-center">No data found</h5 class="text-center">'
 			);
 		} else {
-			let eventsToday = storedEvents.filter(
-				(eventsToday) => eventsToday.eventDate === eventDate
-			);
-			let eventsList = Object.keys(eventsToday).map((k) => eventsToday[k]);
+			let eventsList = [];
+			storedEvents.forEach(function (arrayItem) {
+				if (arrayItem.date == eventDate) {
+					eventsList.push(arrayItem);
+				}
+			});
+			console.log(eventsList);
 			if (eventsList.length > 0) {
 				let eventsLi = "";
-				eventsList.forEach((event) =>
+				eventsList.forEach(function (arrayItem) {
+					console.log(arrayItem.starting_period);
+					var start_time = moment(Date.parse(arrayItem.starting_period))
+						.tz("America/Phoenix")
+						.format("YYYY-MM-DD HH:mm");
+					var end_time = moment(arrayItem.ending_period).format("hh:mm a");
 					$(".events-today").html(
 						(eventsLi += `<div class="alert alert-danger text-center alert-dismissible fade show" role="alert">
-                    ${event.eventText}
+                    ${start_time + " - " + end_time}
                   </div>`)
-					)
-				);
+					);
+				});
 			} else {
 				$(".events-today").html(
 					'<h5 class="text-center">No data found</h5 class="text-center">'
@@ -207,10 +216,10 @@ $(function () {
 		$(this).addClass("active");
 		let todaysDate = $(this).text() + " " + months[month] + " " + year;
 		let eventDay = days[new Date(year, month, $(this).text()).getDay()];
-		let eventDate = $(this).text() + month + year;
+		let m = month + 1;
+		let eventDate = $(this).text() + "0" + m + year;
 		$(".event-date").html(todaysDate).data("eventdate", eventDate);
 		$(".event-day").html(eventDay);
-		console.log(eventDate);
 		showEvent(eventDate);
 	});
 
@@ -226,7 +235,9 @@ $(function () {
 
 		const today = dd + mm + yyyy;
 		let todaysDate = dd + " " + months[month] + " " + year;
+		let eventDay = days[new Date(year, month, dd).getDay()];
 		$(".event-date").html(todaysDate).data("eventdate", today);
+		$(".event-day").html(eventDay);
 		console.log(today);
 		showEvent(today);
 	});
