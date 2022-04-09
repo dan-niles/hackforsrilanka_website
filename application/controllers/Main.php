@@ -12,12 +12,12 @@ class Main extends CI_Controller
 
     public function index()
     {
-        $this->home();
+        $this->schedule();
     }
 
     function home()
     {
-        $this->load->view('home');
+        $this->schedule();
     }
 
     function schedule()
