@@ -85,6 +85,7 @@
                     </div>
                 </div>
                 <!-- Contact cards-->
+                <div class="form-group col-12 mt-4 text-center"><h1>Coming Soon...</h1></div>
                 <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
                     <div class="col">
                         <div class="feature bg-warning bg-gradient text-dark rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
