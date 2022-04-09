@@ -150,7 +150,7 @@ renderCalendar(month, year);
 
 $(function () {
 	function showEvent(eventDate) {
-		let storedEvents = JSON.parse(localStorage.getItem("events"));
+		let storedEvents = groups_data;
 		if (storedEvents == null) {
 			$(".events-today").html(
 				'<h5 class="text-center">No data found</h5 class="text-center">'
@@ -210,8 +210,27 @@ $(function () {
 		let eventDate = $(this).text() + month + year;
 		$(".event-date").html(todaysDate).data("eventdate", eventDate);
 		$(".event-day").html(eventDay);
+		console.log(eventDate);
 		showEvent(eventDate);
 	});
+
+	$(document).ready(function () {
+		$("#event").removeClass("d-none");
+		const eventDate = new Date();
+		const yyyy = eventDate.getFullYear();
+		let mm = eventDate.getMonth() + 1; // Months start at 0!
+		let dd = eventDate.getDate();
+
+		if (dd < 10) dd = "0" + dd;
+		if (mm < 10) mm = "0" + mm;
+
+		const today = dd + mm + yyyy;
+		let todaysDate = dd + " " + months[month] + " " + year;
+		$(".event-date").html(todaysDate).data("eventdate", today);
+		console.log(today);
+		showEvent(today);
+	});
+
 	$(document).on("click", ".hide", function () {
 		$("#event").addClass("d-none");
 	});

@@ -36,7 +36,7 @@ jobs:
       - name: FTP Deploy to WP Engine (Staging)
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          ftp-server: sftp://ftp.rafaco.es:21/
+          ftp-server: ftp://ftp.rafaco.es:21/
           ftp-username: participant@api.hackforsrilanka.rafaco.es
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           #local-dir: ./our-awesome-theme/

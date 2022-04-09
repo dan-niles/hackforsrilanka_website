@@ -120,8 +120,12 @@
     <?php $this->load->view('inc/footer'); ?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <?php $this->load->view('inc/scripts'); ?>
-
+    <script>
+        var groups_data = <?php echo json_encode($groups_info) ?>;
+        console.log(groups_data)
+    </script>
     <script src="<?php echo base_url() ?>/assets/calendar/js/script.js"></script>
+
 </body>
 
 </html>
