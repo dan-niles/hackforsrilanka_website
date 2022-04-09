@@ -24,8 +24,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://website.hackforsrilanka.rafaco.es/';
-// $config['base_url'] = 'http://localhost/hack-for-sri-lanka';
-$config['base_url'] = 'http://192.168.1.88/hack-for-sri-lanka';
+$config['base_url'] = 'http://localhost/hack-for-sri-lanka';
+// $config['base_url'] = 'http://192.168.1.88/hack-for-sri-lanka';
 
 /*
 |--------------------------------------------------------------------------

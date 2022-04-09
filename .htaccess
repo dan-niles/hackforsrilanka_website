@@ -1,0 +1,13 @@
+Options +FollowSymlinks
+RewriteEngine on
+AddDefaultCharset UTF-8
+
+RewriteCond %{REQUEST_URI} ^/?web/controller/function/?$ [NC]
+RewriteRule ^(.*)$ /controller/function [NC,R,L]
+
+RewriteCond %{REQUEST_URI} ^/?[a-z]+/[a-z]+/([a-z]+)/([a-z]+)/?$ [NC]
+RewriteRule ^(.*)$ /%1/%2/? [NC,R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

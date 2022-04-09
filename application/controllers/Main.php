@@ -22,7 +22,12 @@ class Main extends CI_Controller
 
     function schedule()
     {
-        $this->load->view('schedule');
+        $group_id = $this->uri->segment(2);
+        if ($group_id == "") {
+            $this->load->view('schedule');
+        } else {
+            $this->load->view('schedule_view');
+        }
     }
 
     function about()
