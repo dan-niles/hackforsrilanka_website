@@ -83,16 +83,16 @@
                         <div class="text-center">
                             <img class="img-fluid rounded-circle mb-4 px-4" src="<?php echo base_url() ?>assets/img/teams/db.png" alt="..." />
                             <h5 class="fw-bolder text-white">API & DB - The Dispatchers</h5>
-                            <p class="text-white mt-3 mb-1">Jude Cooray</p>
-                            <p>Kun Guo<br>Danny Sallis<br>Selena Sun<br>Amanbir Singh</p>
+                            <p class="fst-italic text-white-50">Jude Cooray</p>
+                            <p>Sanjeew Kanagaraj<br>Edgar Roerdink<br>Arjun Balasingam<br>Akhilesh Balasingam</p>
                         </div>
                     </div>
                     <div class="col mb-5 mb-5 mb-sm-0">
                         <div class="text-center">
                         <img class="img-fluid rounded-circle mb-4 px-4" src="<?php echo base_url() ?>assets/img/teams/web.png" alt="..." />
                             <h5 class="fw-bolder text-white">Web - Team Facade</h5>
-                            <p class="text-white mt-3 mb-1">Jinal Shah</p>
-                            <p>Kun Guo<br>Danny Sallis<br>Selena Sun<br>Amanbir Singh</p>
+                            <p class="fst-italic text-white-50">Tharuka Kannaruka</p>
+                            <p>Dan Niles<br>Elizabeth Feldman</p>
                         </div>
                     </div>
 
@@ -103,16 +103,16 @@
                         <div class="text-center">
                         <img class="img-fluid rounded-circle mb-4 px-4" src="<?php echo base_url() ?>assets/img/teams/bulb-illuminati.png" alt="..." />
                             <h5 class="fw-bolder text-white">Lights off - The Illuminati</h5>
-                            <p class="text-white mt-3 mb-1">Jinal Shah</p>
-                            <p>Kun Guo<br>Danny Sallis<br>Selena Sun<br>Amanbir Singh</p>
+                            <p class="fst-italic text-white-50">Rashid Al-Abr</p>
+                            <p>Panel Mukhopadhyay<br>Afifa Zuhair<br>Deveen Harischandra<br>Amanda Bakerlee<br>Pratheepa Jeganathan</p>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="text-center">
                         <img class="img-fluid rounded-circle mb-4 px-4" src="<?php echo base_url() ?>assets/img/teams/brainstorm.png" alt="..." />
                             <h5 class="fw-bolder text-white">Brainstorm - Slam Dunkers</h5>
-                            <p class="text-white mt-3 mb-1">Jinal Shah</p>
-                            <p>Kun Guo<br>Danny Sallis<br>Selena Sun<br>Amanbir Singh</p>
+                            <p class="fst-italic text-white-50">Vandhana Krishnan, Ankur Pandey</p>
+                            <p>Emmy Thamkaison<br>Alex Godwin<br>Rashmi Tippalagama</p>
                         </div>
                     </div>
                 </div>
