@@ -31,7 +31,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="<?php echo base_url() ?>assets/img/home.jpg" alt="..." /></div>
+          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="<?php echo base_url() ?>assets/img/home.jpeg" alt="..." /></div>
         </div>
       </div>
     </header>

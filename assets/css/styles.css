@@ -4816,7 +4816,8 @@ fieldset:disabled .btn {
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-	color: #fff;
+	color: #fece30;
+	border-bottom: 1px solid #fccc2f;
 }
 .navbar-dark .navbar-toggler {
 	color: rgba(255, 255, 255, 0.55);
