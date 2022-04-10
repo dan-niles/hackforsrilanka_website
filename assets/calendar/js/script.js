@@ -168,10 +168,10 @@ $(function () {
 				let eventsLi = "";
 				eventsList.forEach(function (arrayItem) {
 					console.log(arrayItem.starting_period);
-					var start_time = moment(Date.parse(arrayItem.starting_period)).format(
-						"hh:mm a"
-					);
-					var end_time = moment(arrayItem.ending_period).format("hh:mm a");
+					var start_time = moment
+						.utc(arrayItem.starting_period)
+						.format("hh:mm a");
+					var end_time = moment.utc(arrayItem.ending_period).format("hh:mm a");
 					$(".events-today").html(
 						(eventsLi += `<div class="alert alert-danger text-center alert-dismissible fade show" role="alert">
                     ${start_time + " - " + end_time}
