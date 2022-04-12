@@ -1,0 +1,105 @@
+html body .card {
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+html body .card-header .prevMonth {
+	cursor: pointer;
+}
+
+html body .card-header .nextMonth {
+	cursor: pointer;
+}
+
+.alert-danger {
+	color: #c2bcb4;
+	background-color: #2e2e2e;
+	border-color: #2e2e2e;
+}
+
+/* html body .card-body {
+    background: #f1acb7
+} */
+
+html body .card-body .days span {
+	background: #fece30;
+	color: #171818;
+	border-radius: 50%;
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+html body .card-body .days span:hover {
+	background: #ddbe58;
+}
+
+html body .card-body .dates span {
+	background: #ffefb9;
+	color: #000;
+	border-radius: 50%;
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+html body .card-body .dates span.active,
+html body .card-body .dates span:hover {
+	background: #fffaee;
+	color: #000;
+}
+
+html body .card-body .dates span.ntMonth {
+	color: #938e8e;
+	background: #fffad8;
+}
+
+html body .card-body .dates span.ntMonth:hover {
+	background: #ffeef0;
+	color: #000;
+}
+
+html body .card#event .card-header .close {
+	color: ##161717;
+	opacity: 1;
+}
+
+html body .card#event .card-body .events-today {
+	height: 210px;
+	overflow-x: hidden;
+}
+
+html body .card#event .card-body .events-input .data-invalid {
+	border-color: red;
+}
+
+html body .card#event .card-body .events-input .error {
+	font-size: 12px;
+	color: red;
+	position: absolute;
+	top: 100%;
+}
+
+@media (max-width: 767px) {
+	html body .card-body .days span {
+		height: 38px;
+		width: 38px;
+		line-height: 38px;
+		font-size: 0.8rem;
+	}
+
+	html body .card-body .dates span {
+		height: 38px;
+		width: 38px;
+		line-height: 38px;
+		font-size: 0.8rem;
+	}
+
+	html body .card#event .card-body .events-today {
+		height: 188px;
+	}
+}
